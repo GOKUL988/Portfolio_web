@@ -3,7 +3,7 @@
 This is my personal portfolio website showcasing my skills 😊, projects 🖥️, and experience 👨‍💻 in web development.
 
 ## Features
-- Responsive design for tablet, and desktop
+- Responsive design for Mobile, tablet, and desktop
 - About me section with education and skills
 - Contact form for inquiries
 
@@ -17,7 +17,7 @@ This is my personal portfolio website showcasing my skills 😊, projects 🖥�
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/portfolio-website.git
+   git clone https://github.com/GOKUL988/Portfolio_web.git
    ```
 2. Navigate to the project folder:
    ```bash
