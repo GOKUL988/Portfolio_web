@@ -21,7 +21,7 @@ This is my personal portfolio website showcasing my skills 😊, projects 🖥�
    ```
 2. Navigate to the project folder:
    ```bash
-   cd portfolio-website
+   cd portfolio_web
    ```
 
 ## Deployment
