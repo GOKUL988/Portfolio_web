@@ -6,13 +6,15 @@
         <title> PORTFOLIO</title> 
         <link rel="stylesheet" href="main.css">
     </head>
-    <body class="bodymain" id="overflow">
+    <body class="bodymain" id="overfl">
         <table cellpadding="10px" width="100%" id="fstbt"> 
             <tr>
-                <td class="tit1"><h1 class="ani">PORTFOLIO</h1></td>
+                <td class="tit1"><a href="index.html"><img src="image\db\gklogo.png" class="ani"></a></td>
                 <td class="tit2">
+                    <a><img src=""></a>
                     <a href="work.html"><button class="but">Works</button></a>
-                    <a href="https://drive.google.com/file/d/1fZI-tGKX1z_Nb0o3B4yjjVxFtPAJfjdc/view?usp=drive_link"><button class="but">Resume</button></a>
+                    <a href="certi.html"><button class="but">Certificates</button></a>
+                    <a href="res.html"><button class="but" onclick="resu()">Resume</button></a>
                     <a href="Contact.html"><button class="but">Contact</button></a>
                 </td>
             </tr>
@@ -20,7 +22,7 @@
         <div class="mapg" >
             <table class="side1" id="nametab">
                 <tr>
-                    <th class="rows"><h1 class="">Hii 😊, I Am Gokul,</h1>
+                    <th class="rows"><h1>Hii, I Am Gokul,</h1>
                     <h3>Full Stack Developer</h3>
                     <a href="mailto:gs164945@gmail.com;?subject= Job Applications"><button class="but">Hire Me!!</button></a></th>
                 </tr>
@@ -31,44 +33,69 @@
 
             <table class="side2" id="imgtab">
                 <tr>
-                    <th class="rows2"><img src="image/Remove background project.png" alt="sample" class="img1"></th>
+                    <th class="rows2"><img src="image\db\img_prf1.jpg" alt="profile" class="img1"></th>
                 </tr>
             </table>
         </div>
         <div class="mapg1" id="abspc">
-            <table class="side1">
-                <tr>
-                    <td style="padding-left: 20%;"><img src="image/aboutpt.webp" alt="about me" class="imgab"></td>
-                </tr>
-            </table>
-            <table class="side2">
-                <tr>
-                    <th style="font-weight: bold; font-size: large; padding-top: 55px;">About Me</th>
-                </tr>
-                <tr>
-                    <td class="abtxt"><i>    Hii 🙋‍♂️ , I am Gokul. I am passionate about solving
-                        complex problems through
-                        technology. My academic
-                        projects using Python and Django
-                        have strengthened my ability to
-                        think critically and work
-                        independently. I am excited to
-                        expand my knowledge further and
-                        contribute my skills to a dynamic
-                        team. </i></td>
-                </tr>
-                <tr>
-                    <td style="padding-left: 220px;"><a href="https://drive.google.com/file/d/1fZI-tGKX1z_Nb0o3B4yjjVxFtPAJfjdc/view?usp=drive_link"><button class="butcv"><span></span> Download CV</button></a></td>
-                </tr>
-                <tr>
-                    <td style="padding-bottom: 80px; padding-left: 185px;"><a href="https://www.linkedin.com/in/gokul-saravanan-062375277"><img src="image/linkedin_1384014.png" alt="linkedin" class="ico"></a> 
-                        <a href="https://github.com/GOKUL988"><img src="image/icons8-github-50.png" alt="github" class="ico"></a> 
-                        <a href="https://www.facebook.com/gokul.vignesh.547?mibextid=ZbWKwL"><img src="image/facebook.png" alt="facebook" class="ico"></a> 
-                        <a href="https://www.instagram.com/gxku__0_4?igsh=MThoZGljdjB2MTNpeA=="><img src="image/instagram.png" alt="instragram" class="ico"></a> 
-                    </td>
-                </tr>
-            </table>
-        </div>
+            <div class="side1" >
+                <table class="skbut" cellpadding="5px">
+                    <tr><th colspan="4" align="center" style="padding-top: 10px;"><h3 class="ani2">SKILLS</h3></th></tr>
+                    <tr>
+                        <td><button class="skbx">Django</button></td>
+                        <td><button class="skbx">Python</button></td>
+                        <td><button class="skbx">SqLite</button></td>
+                        <td><button class="skbx">JavaScript</button></td>  
+                    </tr>
+                    <table class="skbut" cellpadding="5px">
+                    <tr><td><button class="skbx">HTML</button></td>
+                        <td><button class="skbx">CSS (Cascasding Style Sheet)</button></td>
+                        <td><button class="skbx">Git and GitHub</td>
+                           
+                    </tr>
+                    </table>
+                    <table class="skbut"cellpadding="5px">
+                    <tr>
+                        <td><button class="skbx">Cloud Computing</button></td>
+                        <td><button class="skbx">Vs Code</button></td> 
+                        <td><button class="skbx">PyCharm</button></td>  
+                        <td><button class="skbx">TypeWriting|English</button></td>
+                    </tr>
+                </table>
+                <table class="skbut" cellpadding="5px">
+                    <tr><td><button class="skbx">Organization Behaviour</button></td></tr>
+                </table>
+            </div>
+            <div class="side2">
+                <table class="abtbe">
+                    <tr>
+                        <th style="font-weight: bold; font-size: large;padding-top: 7%;"><a class="ani2">ABOUT BE</a></th>
+                    </tr>
+                    <tr>
+                        <td class="abtxt">   Hii 🙋‍♂️ , I am Gokul. I am passionate about solving
+                            complex problems through
+                            technology. My academic
+                            projects using Python and Django
+                            have strengthened my ability to
+                            think critically and work
+                            independently. I am excited to
+                            expand my knowledge further and
+                            contribute my skills to a dynamic
+                            team.</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 220px; padding-top: 25px;"><button class="butcv" onclick="download()"><span></span> Download Resume</button></td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom: 80px; padding-left: 34%;padding-top: 3%;"><a href="https://www.linkedin.com/in/gokul-saravanan-062375277"><img src="image\linkedin-50.png" alt="linkedin" class="ico"></a> 
+                            <a href="https://github.com/GOKUL988"><img src="image\github-logo-94.png" alt="github" class="ico"></a> 
+                            <a href="https://www.facebook.com/gokul.vignesh.547?mibextid=ZbWKwL"><img src="image\facebook-32.png" alt="facebook" class="ico"></a> 
+                            <a href="https://t.me/Gokul_saravanan"><img src="image\telegram-50.png" alt="telegram" class="ico"></a> 
+                        </td>
+                    </tr>
+                </table>
+            </div>     
+        </div> 
     </body>
     <script src="main.js"></script>
 </html>
