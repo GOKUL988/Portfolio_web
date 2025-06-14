@@ -7,19 +7,17 @@
         <link rel="stylesheet" href="main.css">
     </head>
     <body class="bodymain" id="overfl">
-        <table cellpadding="10px" width="100%" id="fstbt"> 
+        <table cellpadding="15px" width="100%" id="fstbt"> 
             <tr>
                 <td class="tit1"><a href="index.html"><img src="image\db\gklogo.png" class="ani"></a></td>
-                <td class="tit2">
-                    <a><img src=""></a>
-                    <a href="work.html"><button class="but">Works</button></a>
-                    <a href="certi.html"><button class="but">Certificates</button></a>
-                    <a href="https://drive.google.com/file/d/1KxaYZNbykp9-HAcmc-VWNPeRfH6nnRDW/view?usp=drive_link"><button class="but">Resume</button></a>
+               <td class="tit2">
+                    <button class="but" onclick="ab1()">Works</button>
+                    <a href="image\db\resume.pdf"><button class="but">Resume</button></a>
                     <a href="Contact.html"><button class="but">Contact</button></a>
                 </td>
             </tr>
         </table> 
-        <div class="mapg" >
+        <div class="mapg">
             <table class="side1" id="nametab">
                 <tr>
                     <th class="rows"><h1>Hii, I Am Gokul,</h1>
@@ -33,13 +31,13 @@
 
             <table class="side2" id="imgtab">
                 <tr>
-                    <th class="rows2"><img src="image\db\img_prf1.jpg" alt="profile" class="img1"></th>
+                    <th class="rows2"><img src="image\db\GKPC.jpg" alt="profile" class="img1"></th>
                 </tr>
             </table>
         </div>
-        <div class="mapg1" id="abspc">
-            <div class="side1" >
-                <table class="skbut" cellpadding="5px">
+        <div class="mapg1" id="abspc" >
+            <div class="side1" style="padding-left: 28px;">
+                <table class="skbut"cellpadding="5px">
                     <tr><th colspan="4" align="center" style="padding-top: 10px;"><h3 class="ani2">SKILLS</h3></th></tr>
                     <tr>
                         <td><button class="skbx">Django</button></td>
@@ -62,8 +60,11 @@
                         <td><button class="skbx">TypeWriting|English</button></td>
                     </tr>
                 </table>
-                <table class="skbut" cellpadding="5px">
-                    <tr><td><button class="skbx">Organization Behaviour</button></td></tr>
+                <table class="skbut" cellpadding="5px" >
+                    <tr>
+                        <td><button class="skbx">Organization Behaviour</button></td>
+                        <td><button class="skbx">Digital Marketing</button></td>
+                    </tr>
                 </table>
             </div>
             <div class="side2">
@@ -72,30 +73,145 @@
                         <th style="font-weight: bold; font-size: large;padding-top: 7%;"><a class="ani2">ABOUT BE</a></th>
                     </tr>
                     <tr>
-                        <td class="abtxt">   Hii 🙋‍♂️ , I am Gokul. I am passionate about solving
+                        <td class="abtxt">  
+                            Hii 🙋‍♂️ , I am Gokul. I am passionate about solving
                             complex problems through
-                            technology. My academic
+                            technology.My academic
                             projects using Python and Django
                             have strengthened my ability to
                             think critically and work
-                            independently. I am excited to
+                            independently.I am excited to
                             expand my knowledge further and
                             contribute my skills to a dynamic
-                            team.</td>
+                            team.
                     </tr>
                     <tr>
-                        <td style="padding-left: 220px; padding-top: 25px;"><button class="butcv" onclick="download()"><span></span> Download Resume</button></td>
+                        <td style="padding-left: 39%; padding-top: 25px;"><button class="butcv" onclick="download()"><span></span> Download Resume</button></td>
                     </tr>
                     <tr>
-                        <td style="padding-bottom: 80px; padding-left: 34%;padding-top: 3%;"><a href="https://www.linkedin.com/in/gokul-saravanan-062375277"><img src="image\linkedin-50.png" alt="linkedin" class="ico"></a> 
+                        <td style=" padding-left: 38%;padding-top: 3%;"><a href="https://www.linkedin.com/in/gokul-saravanan-062375277"><img src="image\linkedin-50.png" alt="linkedin" class="ico"></a> 
                             <a href="https://github.com/GOKUL988"><img src="image\github-logo-94.png" alt="github" class="ico"></a> 
                             <a href="https://www.facebook.com/gokul.vignesh.547?mibextid=ZbWKwL"><img src="image\facebook-32.png" alt="facebook" class="ico"></a> 
                             <a href="https://t.me/Gokul_saravanan"><img src="image\telegram-50.png" alt="telegram" class="ico"></a> 
                         </td>
                     </tr>
                 </table>
-            </div>     
+            </div>  
         </div> 
+        <div id="titproj" style="display: none;">
+            <table align="center">
+                <tr><th align=""> <h3 class="ani2">PROJECTS</h3></th></tr>
+            </table>
+           
+        </div>
+        <div class="proj2" id="projsec">
+            <button class="arrow-btn arrow-left" onclick="scrollSlider(-1)">&#10094;</button>
+            <div class="proj22" id="slider">
+                <div class="projbx">
+                    <h4>Library Management System</h4>
+                    <p>HTML, CSS, JavaScript, Django, SQLite, Python</p>  
+                    <p style="text-align: center;"><a href=""><button class="projbut1">&#10095</button></a></p>
+                </div>
+                <div class="projbx">
+                    <h4>Resume Storage</h4>
+                    <p>HTML, CSS, JavaScript, Django, SQLite, Python</p>  
+                    <p style="text-align: center;"><a href="https://github.com/GOKUL988/Resume-store-in-Django-.git"><button class="projbut1">&#10095</button></a></p>
+                </div>
+                <div class="projbx">
+                    <h4>Student Mark Management</h4>
+                    <p>HTML, CSS, JavaScript, Django, SQLite, Python</p>  
+                    <p style="text-align: center;"><a href="https://github.com/GOKUL988/Student-mark-management-in-Django.git"><button class="projbut1">&#10095</button></a></p>  
+                </div>  
+                <div class="projbx">
+                    <h4>Bike Management (Sample project)</h4>
+                    <p>HTML, CSS, JavaScript, Django, SQLite, Python</p>  
+                    <p style="text-align: center;"><a href="https://github.com/GOKUL988/Bike-details-in-django.git"><button class="projbut1">&#10095</button></a></p>  
+                </div>  
+                <div class="projbx">
+                    <h4>Python Main function() project</h4>
+                    <p>Python</p>  
+                    <p style="text-align: center;"><a href="https://github.com/GOKUL988/Python-Main-Function.git"><button class="projbut1">&#10095</button></a></p>
+                </div>  
+                <div class="projbx">
+                    <h4>Snake and Ladder</h4>
+                    <p>Python</p>  
+                    <p style="text-align: center;"><a href="https://github.com/GOKUL988/Snake-and-Ladder-Game-in-Python.git"><button class="projbut1">&#10095</button></a></p>
+                </div>  
+                <div class="projbx">
+                    <h4>Snake and Ladder Game</h4>
+                    <p>HTML, CSS, JavaScript</p>  
+                    <p style="text-align: center;"><a href="https://github.com/GOKUL988/Snake-and-Ladder-Game.git"><button class="projbut1">&#10095</button></a></p>
+                </div>  
+                <div class="projbx">
+                    <h4>RealEstate Website (sample work)</h4>
+                    <p>HTML, CSS</p>  
+                    <p style="text-align: center;"><a href="https://thanjairealestate.neocities.org/"><button class="projbut1">&#10095</button></a></p>
+                </div>    
+                <div class="projbx">
+                    <h4>News Website (The Indian Express)</h4>
+                    <p>HTML, CSS</p>  
+                    <p style="text-align: center;"><a href="https://github.com/GOKUL988/The-Indian-Express-Website.git"><button class="projbut1">&#10095</button></a></p>
+                </div>
+            </div>
+            <button class="arrow-btn arrow-right" onclick="scrollSlider(1)">&#10095;</button>
+        </div>
+        <div style="display: none;" id="certbut" >
+            <table width="100%" align="center">
+                <tr>
+                    <th style="padding-top: 20px; padding-bottom: 25px;"><button onclick="certicall()" class="but">CERTIFICATES >>></button></th>
+                </tr>
+            </table>
+        </div>
+        <div id="certisec1"  style="display: none;padding-top: 50px;">
+             <table width="100%" align="center">
+                <tr>
+                    <th class="ani">CERTIFICATES</th>
+                </tr>
+            </table>
+        </div>
+      <div id="certisec" style="display: none;">
+        <section style="width: 100%;">
+            <div class="certicon"> 
+                <div class="certi-grid"> 
+                    <div class="certi-card">
+                        <a href="image\certi\kagglepy12.jpg"><img src="image\certi\kagglepy12.jpg" alt="Python kaggle"></a>
+                        <h4>PYTHON </h4>
+                        <p>• Kaggle • DEC 2022</p>
+                    </div>
+                    <div class="certi-card">
+                        <a href="image\certi\ek_pycer.png"><img src="image\certi\ek_pycer.png" alt="Python EK"></a>
+                        <h4>PYTHON</h4>
+                        <p>• EK Academy • JUN 2024</p>
+                    </div>
+                    <div class="certi-card">
+                        <a href="image\certi\GuviCertification - 08u5q529L8Y4T6715m.png"><img src="image\certi\GuviCertification - 08u5q529L8Y4T6715m.png" alt="Python guvi"></a>
+                        <h4>PYTHON</h4>
+                        <p>• GUVI • FEB 2025</p>
+                    </div>
+                    <div class="certi-card">
+                        <a href="image\certi\ibm pic.png"><img src="image\certi\ibm pic.png" alt="IBM"></a>
+                        <h4>Introduction of Cloud Computing  </h4>
+                        <p>• IBM • MAR 2024</p>
+                    </div>
+                    <div class="certi-card">
+                        <a href="image\certi\googldigi.png"><img src="image\certi\googldigi.png" alt="digigoogle"></a>
+                        <h4>Fundamentals of Digital Marketing</h4>
+                        <p>• GOOGLE • MAY 2023</p>
+                    </div>
+                    <div class="certi-card">
+                        <a href="image\certi\tcs_ss.png"><img src="image\certi\tcs_ss.png" alt="tcssoftsk"></a>
+                        <h4>Soft Skill</h4>
+                        <p>• TCS • MAR 2024</p>
+                    </div>
+                    <div class="certi-card">
+                        <a href="image\certi\ob_cer.png"><img src="image\certi\ob_cer.png" alt="obcert"></a>
+                        <h4>Organizational Behaviour</h4>
+                        <p>• AVVMSPC • Feb 2024</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+      </div>
     </body>
     <script src="main.js"></script>
 </html>

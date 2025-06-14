@@ -5,27 +5,56 @@
         <link rel="icon" href="image/icons8-contact-48.png" type="(●'◡'●)">
         <title>PORTFOLIO | Contact</title>
         <link rel="stylesheet" href="main.css">
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script>
+            (function(){
+            emailjs.init("fLs18AFAbsmKsJONe");
+            })();
+        </script>
     </head>
-    <body class="bodymain">
+    <body class="bodymain1">
         <div class="container">
-            <h2>Contact Me</h2>
-            
-            <div>
-                <p><strong>Email:</strong> <a href="mailto:gs164945@gmail.com;?subject= Job Applications">gs164945@gmail.com</a></p>
-                <p><strong>Location:</strong> Thanjavur, TamilNadu</p>
-            </div>
-            <table>
-                <tr>
-                    <td style="padding-bottom: 25px; padding-left: 185px;"><a href="https://www.linkedin.com/in/gokul-saravanan-062375277"><img src="image\linkedin-50.png" alt="linkedin" class="ico"></a> 
-                        <a href="https://github.com/GOKUL988"><img src="image\github-logo-94.png" alt="github" class="ico"></a> 
-                        <a href="https://discord.com/users/836470360945328169"><img src="image\discord-50.png" alt="discord" class="ico"></a>
-                        <a href="https://www.facebook.com/gokul.vignesh.547?mibextid=ZbWKwL"><img src="image\facebook-32.png" alt="facebook" class="ico"></a> 
-                        <a href="https://t.me/Gokul_saravanan"><img src="image\telegram-50.png" alt="instragram" class="ico"></a> 
-                    </td>
-                </tr>
-                <tr >
-                    <th style="padding-left: 185px;"><a href="index.html"><button class="butwkcl">Back</button></a></th>
-                </tr>
+            <h2>Contact Me:</h2>
+            <form id="contact-form" style="text-align: center;">
+                <label for="name" hidden></label>
+                <input type="text" id="name" name="name" placeholder="Your Name" class="eminp" required>
+
+                <label for="email" hidden></label>
+                <input type="email" id="email" name="email" placeholder="Your Email" class="eminp" required>
+
+                <label for="message" hidden></label>
+                <textarea id="message" name="message" placeholder="Your Message" class="eminp11" required></textarea>
+
+                <br>
+                <button type="submit" class="eminp12">Send<span class="emispan"></span></button>
+            </form>
+
+            <table align="center" cellpadding="10px" width="60%">
+            <tr>
+                <th style="padding-bottom: 25px;" class="con-ico">
+                <a href="https://www.linkedin.com/in/gokul-saravanan-062375277"><img src="image/linkedin-50.png" alt="linkedin" class="ico"></a> 
+                <a href="https://github.com/GOKUL988"><img src="image/github-logo-94.png" alt="github" class="ico"></a> 
+                <a href="https://discord.com/users/836470360945328169"><img src="image/discord-50.png" alt="discord" class="ico"></a>
+                <a href="https://www.facebook.com/gokul.vignesh.547?mibextid=ZbWKwL"><img src="image/facebook-32.png" alt="facebook" class="ico"></a> 
+                <a href="https://t.me/Gokul_saravanan"><img src="image/telegram-50.png" alt="telegram" class="ico"></a> 
+                </th>
+            </tr>
+            <tr>
+                <th><a href="index.html"><button class="butwkcl">Back</button></a></th>
+            </tr>
             </table>
-<script src="main.js"></script>
+        </div>
+    </body>        
+    <script>
+  document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_4ubpd09", "template_ullw9wc", this)
+      .then(() => {
+        alert("Message sent successfully!");
+      }, (error) => {
+        alert("Error: " + JSON.stringify(error));
+      });
+  });
+</script>
 </html>
