@@ -42,17 +42,17 @@ LAPTOP SCREEN VIEWS
 ![Image 4](screenshots/port4.png)
 ##
 MOBILE SCREEN VIEWS
-![Image 5](screenshots\mob1.png)
+![Image 5](screenshots/mob1.png)
 ##
-![Image 6](screenshots\mob2.png)
+![Image 6](screenshots/mob2.png)
 ##
-![Image 7](screenshots\mob3.png)
+![Image 7](screenshots/mob3.png)
 ##
-![Image 8](screenshots\mob4.png)
+![Image 8](screenshots/mob4.png)
 ##
-![Image 9](screenshots\mob5.png)
+![Image 9](screenshots/mob5.png)
 ##
-![Image 10](screenshots\mob6.png)
+![Image 10](screenshots/mob6.png)
 ##
 
 ## License
