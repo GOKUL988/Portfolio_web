@@ -36,7 +36,6 @@ document.addEventListener("DOMContentLoaded",function(){
     tab1("#nametab"); 
     tab2("#imgtab"); 
     tab3("#fstbt");
-    tab4("#cert")
 }); 
 function tab1(tableSelector){
     rows=document.querySelectorAll(`${tableSelector} th.rows`); 
@@ -63,14 +62,7 @@ function tab3(tableSelector2){
     });
 }
 
-function tab4(tableSelector3){
-    rows2=document.querySelectorAll(`${tableSelector3} td.tabss`); 
-    rows2.forEach((row, index) => {
-        setTimeout(() => {
-            row.classList.add("show3");
-        }, index * 300);
-    });
-}
+
 function scrollSlider(direction) {
     const slider = document.getElementById('slider');
     const scrollAmount = 300;
@@ -84,4 +76,23 @@ function scrollSlider(direction) {
         link.href = 'image/db/resume.pdf'; 
         link.download = 'resume.pdf'; 
         link.click();     
+}
+
+const boxes = document.querySelectorAll('.projbx');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+});
+
+boxes.forEach(box => {
+  observer.observe(box);
+});
+
+function toggleSidebar() {
+  const sidebar = document.getElementById("sidebar");
+  sidebar.classList.toggle("active");
 }

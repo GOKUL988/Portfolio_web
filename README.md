@@ -11,7 +11,6 @@ This is my personal portfolio website showcasing my skills 😊, projects 🖥�
 - HTML
 - CSS 
 - JavaScript
-- Django (if applicable)
 - Git & GitHub for version control
 
 ## Installation

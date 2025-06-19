@@ -11,66 +11,36 @@
             <tr>
                 <td class="tit1"><a href="index.html"><img src="image\db\gklogo.png" class="ani"></a></td>
                <td class="tit2">
-                    <button class="but" onclick="ab1()">Works</button>
-                    <a href="image\db\resume.pdf"><button class="but">Resume</button></a>
+                    <span class="but1"><button class="but" onclick="ab1()">Works</button></span>
+                    <span ><a href="image\db\resume.pdf"><button class="but">Resume</button></a></span>
                     <a href="Contact.html"><button class="but">Contact</button></a>
                 </td>
             </tr>
         </table> 
         <div class="mapg">
-            <table class="side1" id="nametab">
+            <table class="mapg-side1" id="nametab">
                 <tr>
-                    <th class="rows"><h1>Hii, I Am Gokul,</h1>
+                    <th class="rows"><h1>Hii, I Am <span class="nmetxt">Gokul,</span></h1>
                     <h3>Full Stack Developer</h3>
-                    <a href="mailto:gs164945@gmail.com;?subject= Job Applications"><button class="but">Hire Me!!</button></a></th>
+                    <a href="mailto:gs164945@gmail.com;?subject= Job Applications"><button class="but">Hire Me!!</button></a>
+                   
                 </tr>
                 <tr>
-                    <th id="remove" class="rows"><button class="but" onclick="ab()"><span></span>About Me🔻</button></th>
+                    <th id="remove" class="rows"><button class="but" onclick="ab()">About Me🔻</button></th>
                 </tr>
             </table>
 
-            <table class="side2" id="imgtab">
+            <table class="mapg-side2" id="imgtab">
                 <tr>
                     <th class="rows2"><img src="image\db\GKPC.jpg" alt="profile" class="img1"></th>
                 </tr>
             </table>
         </div>
         <div class="mapg1" id="abspc" >
-            <div class="side1" style="padding-left: 28px;">
-                <table class="skbut"cellpadding="5px">
-                    <tr><th colspan="4" align="center" style="padding-top: 10px;"><h3 class="ani2">SKILLS</h3></th></tr>
+             <div class="mapg1-side1">
+                <table class="abtbe"> 
                     <tr>
-                        <td><button class="skbx">Django</button></td>
-                        <td><button class="skbx">Python</button></td>
-                        <td><button class="skbx">SqLite</button></td>
-                        <td><button class="skbx">JavaScript</button></td>  
-                    </tr>
-                    <table class="skbut" cellpadding="5px">
-                    <tr><td><button class="skbx">HTML</button></td>
-                        <td><button class="skbx">CSS (Cascasding Style Sheet)</button></td>
-                        <td><button class="skbx">Git and GitHub</td>
-                           
-                    </tr>
-                    </table>
-                    <table class="skbut"cellpadding="5px">
-                    <tr>
-                        <td><button class="skbx">Cloud Computing</button></td>
-                        <td><button class="skbx">Vs Code</button></td> 
-                        <td><button class="skbx">PyCharm</button></td>  
-                        <td><button class="skbx">TypeWriting|English</button></td>
-                    </tr>
-                </table>
-                <table class="skbut" cellpadding="5px" >
-                    <tr>
-                        <td><button class="skbx">Organization Behaviour</button></td>
-                        <td><button class="skbx">Digital Marketing</button></td>
-                    </tr>
-                </table>
-            </div>
-            <div class="side2">
-                <table class="abtbe">
-                    <tr>
-                        <th style="font-weight: bold; font-size: large;padding-top: 7%;"><a class="ani2">ABOUT BE</a></th>
+                        <th class="abtit"><a class="ani2">ABOUT BE</a></th>
                     </tr>
                     <tr>
                         <td class="abtxt">  
@@ -80,16 +50,16 @@
                             projects using Python and Django
                             have strengthened my ability to
                             think critically and work
-                            independently.I am excited to
+                            independently. I am excited to
                             expand my knowledge further and
                             contribute my skills to a dynamic
-                            team.
+                            team.</td>
                     </tr>
                     <tr>
-                        <td style="padding-left: 39%; padding-top: 25px;"><button class="butcv" onclick="download()"><span></span> Download Resume</button></td>
+                        <td class="resdwnbut"><button class="butcv" onclick="download()"><span class="butcvspan"></span> Download Resume</button></td>
                     </tr>
                     <tr>
-                        <td style=" padding-left: 38%;padding-top: 3%;"><a href="https://www.linkedin.com/in/gokul-saravanan-062375277"><img src="image\linkedin-50.png" alt="linkedin" class="ico"></a> 
+                        <td  class="resdwn2"><a href="https://www.linkedin.com/in/gokul-saravanan-062375277"><img src="image\linkedin-50.png" alt="linkedin" class="ico"></a> 
                             <a href="https://github.com/GOKUL988"><img src="image\github-logo-94.png" alt="github" class="ico"></a> 
                             <a href="https://www.facebook.com/gokul.vignesh.547?mibextid=ZbWKwL"><img src="image\facebook-32.png" alt="facebook" class="ico"></a> 
                             <a href="https://t.me/Gokul_saravanan"><img src="image\telegram-50.png" alt="telegram" class="ico"></a> 
@@ -97,15 +67,52 @@
                     </tr>
                 </table>
             </div>  
+            <div class="mapg1-side2">
+                <div id="skblock2" class="skillbox">
+                    <p><h3 align="center"><a class="ani2">SKILLS</a></h3></p>
+                    <p class="sk-ln">
+                        <strong class="under-ln">PROGRAMMING LANGUAGES:<span class="under-ln1"></span></strong>
+                            <span class="skinf"> PYTHON, JAVASCRIPT</span>
+                    </p>
+                    <p class="sk-ln">
+                        <strong class="under-ln">FRAMEWORK:<span class="under-ln1"></span></strong> 
+                        <span class="skinf"> DJANGO</span>
+                    </p>
+                    <p class="sk-ln">
+                        <strong class="under-ln">DATABASE:<span class="under-ln1"></span></strong> 
+                        <span class="skinf"> SQLITE</span>
+                    </p>
+                    <p class="sk-ln">
+                        <strong class="under-ln">CLOUD:<span class="under-ln1"></span></strong> 
+                        <span class="skinf"> CLOUD COMPUTING </span>
+                    </p>
+                    <p class="sk-ln">
+                        <strong class="under-ln">WEB TECHNOLOGIES:<span class="under-ln1"></span></strong> 
+                        <span class="skinf"> HTML, CSS</span>
+                    </p>
+                    <p class="sk-ln">
+                        <strong class="under-ln">MARKETING:<span class="under-ln1"></span></strong> 
+                        <span class="skinf"> DIGITAL MARKETING</span>
+                    </p>
+                    <p class="sk-ln">
+                        <strong class="under-ln">TOOLS:<span class="under-ln1"></span></strong> 
+                        <span class="skinf"> GIT & GITHUB, VS CODE, PYCHARM</span>
+                    </p>
+                    <p class="sk-ln">
+                        <strong class="under-ln">TYPEWRITING:<span class="under-ln1"></span></strong> 
+                        <span class="skinf"> ENGLISH (Lower)</span>
+                    </p>   
+                </div>
+            </div>
         </div> 
-        <div id="titproj" style="display: none;">
+        <div id="titproj" style="display: none;" class="projhead">
             <table align="center">
                 <tr><th align=""> <h3 class="ani2">PROJECTS</h3></th></tr>
             </table>
            
         </div>
         <div class="proj2" id="projsec">
-            <button class="arrow-btn arrow-left" onclick="scrollSlider(-1)">&#10094;</button>
+            <button class="arrow-btn arrow-left" onclick="scrollSlider(-1)"><p style="font-size: xx-large;">&#10094;</p></button>
             <div class="proj22" id="slider">
                 <div class="projbx">
                     <h4>Library Management System</h4>
@@ -153,7 +160,7 @@
                     <p style="text-align: center;"><a href="https://github.com/GOKUL988/The-Indian-Express-Website.git"><button class="projbut1">&#10095</button></a></p>
                 </div>
             </div>
-            <button class="arrow-btn arrow-right" onclick="scrollSlider(1)">&#10095;</button>
+            <button class="arrow-btn arrow-right" onclick="scrollSlider(1)"><p style="font-size: xx-large;">&#10095;</p></button>
         </div>
         <div style="display: none;" id="certbut" >
             <table width="100%" align="center">
@@ -207,6 +214,16 @@
                         <a href="image\certi\ob_cer.png"><img src="image\certi\ob_cer.png" alt="obcert"></a>
                         <h4>Organizational Behaviour</h4>
                         <p>• AVVMSPC • Feb 2024</p>
+                    </div>
+                     <div class="certi-card">
+                        <a href="image\certi\bigdata-udemy.jpg"><img src="image\certi\bigdata-udemy.jpg" alt="obcert"></a>
+                        <h4>Big Data Hadoop</h4>
+                        <p>• UDEMY • JUNE 2025</p>
+                    </div>
+                     <div class="certi-card">
+                        <a href="image\certi\python-essential-udemy.jpg"><img src="image\certi\python-essential-udemy.jpg" alt="obcert"></a>
+                        <h4>Python Development Essential </h4>
+                        <p>•  UDEMY • JUNE 2025</p>
                     </div>
                 </div>
             </div>
