@@ -32,6 +32,7 @@ Feel free to connect with me:
 - LinkedIn: www.linkedin.com/in/gokul-saravanan-062375277
 
 ## Screenshots
+LAPTOP SCREEN VIEWS
 ![Image 1](screenshots/port1.png)
 ##
 ![Image 2](screenshots/port2.png)
@@ -39,6 +40,19 @@ Feel free to connect with me:
 ![Image 3](screenshots/port3.png)
 ##
 ![Image 4](screenshots/port4.png)
+##
+MOBILE SCREEN VIEWS
+![Image 5](screenshots\mob1.png)
+##
+![Image 6](screenshots\mob2.png)
+##
+![Image 7](screenshots\mob3.png)
+##
+![Image 8](screenshots\mob4.png)
+##
+![Image 9](screenshots\mob5.png)
+##
+![Image 10](screenshots\mob6.png)
 ##
 
 ## License
