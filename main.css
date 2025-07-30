@@ -99,12 +99,11 @@ background: linear-gradient(90deg, #00c6ff, #0072ff, #00f2fe);
     transition: all 150s ease-in-out; 
 }
 .mapg1-side1{
-    flex: 54%; 
+    flex: 50%; 
     padding-left: 40px;
 }
 .mapg1-side2{
-    flex:46%;
-    margin-left: 24px;
+    flex:50%;
     
 }
 @media (max-width: 769px)  {
@@ -460,8 +459,6 @@ background: linear-gradient(90deg, #00c6ff, #0072ff, #00f2fe);
     0% { opacity: 0; transform: translateY(-50px); }
     100% { opacity: 1; transform: translateY(0); }
 }
-
-
 .abtbe{
     animation: fade1 1s ease-in-out;
 }
@@ -656,21 +653,20 @@ background: linear-gradient(90deg, #00c6ff, #0072ff, #00f2fe);
   gap: 5px; 
 }
 
-
 @media (min-width:1024px) and (max-width:1600px){
     .skinf {
-        display:inline-flex;
+        display:flex;
         overflow: hidden;
         white-space: nowrap;
         width: 0;
-        font-weight: 900;
+        font-weight: 800;
         font-family: Trebuchet MS;
-        animation: typsk 3s steps(30) forwards;
+        animation: typsk 3s steps(30, end) forwards;
     }
 
     @keyframes typsk {
         from { width: 0; }
-        to { width: 41ch; }
+        to { width: 42ch; }
     }
     .skinf:hover{
         transition: all 330ms ease-in-out;
@@ -681,7 +677,7 @@ background: linear-gradient(90deg, #00c6ff, #0072ff, #00f2fe);
         display: none;
     }
     .projhead{
-        padding-top: 42px;
+        padding-top: 100px;
     }
 }
 
