@@ -1,5 +1,5 @@
 .bodymain{
-    background: linear-gradient(to right, #171d2c,rgb(0, 0, 0));
+    background: linear-gradient(to right, #171d2c,rgb(0,0,0));
     color: white;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;  
@@ -31,6 +31,7 @@ background: linear-gradient(90deg, #00c6ff, #0072ff, #00f2fe);
 
 .mapg-side2 {
   flex: 50%;
+
 }
 
 @media (max-width: 768px){
@@ -266,23 +267,20 @@ background: linear-gradient(90deg, #00c6ff, #0072ff, #00f2fe);
     transform:scale(1.80)
 }
 .img1{
-    width: 390px; 
-    height: 390px; 
-    border-radius: 50%; 
-    object-fit:cover;
-    border: 5px groove beige; 
+    width: 850px; 
+    height: 690px; 
+    border-radius: 40%; 
+    object-fit:contain ;
+    animation: profile 1s ease-in-out; 
 } 
-.img1:hover{
-    transform: scale(1.10); 
-    border: 6px groove beige; 
-    transition:all 220ms ease-in-out;
-    object-fit: cover;
+@keyframes profile {
+    0%{opacity: 0; transform: translateX(160px);} 
+    100%{opacity: 1; transform: translate3d(30px);}
 }
 .imgab{
     width: 380px; 
     height: 350px; 
-    border-radius: 40px; 
-    
+    border-radius: 40px;   
 } 
 .imgab:hover{
     border-radius: 45px; 
@@ -379,8 +377,8 @@ background: linear-gradient(90deg, #00c6ff, #0072ff, #00f2fe);
     box-shadow:  0 0 8px rgba(60, 86, 121, 0.7), 0 0 12px rgba(183, 183, 188, 0.9);
 }
 .tabsld {
-    opacity: 0; /* Initially hidden */
-    transform: translateY(20px); /* Move down slightly */
+    opacity: 0; 
+    transform: translateY(20px); 
     transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 .tabsld.show {
@@ -388,8 +386,8 @@ background: linear-gradient(90deg, #00c6ff, #0072ff, #00f2fe);
     transform: translateY(0);
 }
 .rows{
-    opacity: 0; /* Initially hidden */
-    transform: translateY(50px); /* Move down slightly */
+    opacity: 0;
+    transform: translateY(50px); 
     transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 .rows.show1 {
@@ -756,4 +754,13 @@ background: linear-gradient(90deg, #00c6ff, #0072ff, #00f2fe);
     .but2{
         display: none;
     }
+}
+.cerifi-visb{
+ opacity: 0; 
+ transform: translateY(40px); 
+ transition: opacity 0.8s ease-out, transform 0.9s ease-out;
+}
+.cerifi-visb.visible{
+    opacity: 1; 
+    transform: translate(0);
 }

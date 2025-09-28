@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll Trigger Animation</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    section {
+      height: 100vh; /* just to make page scrollable */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f2f2f2;
+    }
+
+    .scroll-text {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+      font-size: 2rem;
+    }
+
+    .scroll-text.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <section>
+    <h1>⬇ Scroll down</h1>
+  </section>
+
+  <section>
+    <h2 class="scroll-text">This text fades up when visible</h2>
+  </section>
+
+  <section>
+    <h2 class="scroll-text">Another fade-up example</h2>
+  </section>
+
+  <script>
+    // Get all elements with class "scroll-text"
+    const items = document.querySelectorAll(".scroll-text");
+
+    // Create an IntersectionObserver
+    const observer = new IntersectionObserver((en) => {
+      en.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.2 });
+    items.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
